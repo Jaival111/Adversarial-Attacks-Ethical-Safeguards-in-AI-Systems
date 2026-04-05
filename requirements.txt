@@ -1,0 +1,26 @@
+# Core ML (PyTorch — PGD matches CleverHans / Madry formulation)
+# Windows CPU wheels (example): pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# torch>=2.1.0
+# torchvision>=0.16.0
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Attacks (PGD, FGSM; API aligned with CleverHans-style projected gradient)
+torchattacks>=3.5.0
+
+# Optional: TensorFlow + CleverHans for cross-framework attack validation
+# pip install -r requirements-cleverhans.txt
+
+# API
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+pydantic>=2.5.0
+
+# Vision utilities
+Pillow>=10.0.0
+opencv-python-headless>=4.8.0
+
+# Explainability / plotting (optional offline analysis)
+matplotlib>=3.8.0
+tqdm>=4.66.0
